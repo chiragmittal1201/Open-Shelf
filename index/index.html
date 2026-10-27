@@ -1,52 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index – Open Shelf</title>
-  <link rel="stylesheet" href="../style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#142321">
+
+    <title>Stories — OpenShelf</title>
+
+    <link rel="stylesheet" href="../index.css">
 </head>
-<body>
 
-  <div class="container">
-    <div class="card">
+<body class="index-page">
 
-      <!-- LEFT -->
-      <div class="left">
-        <h1>Index</h1>
-        <p class="tagline">
-          Stories shared quietly, without pressure.
-        </p>
+    <main class="index-container">
 
-        <p style="margin-top: 40px; opacity: 0.8;">
-          New chapters are published weekly.
-        </p>
-      </div>
+        <header class="stories-header">
+            <a href="/Home.html" class="stories-brand">OpenShelf</a>
 
-      <!-- RIGHT -->
-      <div class="right">
+            <p class="stories-eyebrow">THE COLLECTION</p>
 
-        <a href="/books/a-love-beyond-power/index.html">
-          A Love Beyond Power
-        </a>
+            <h1 class="stories-title">Stories</h1>
 
-        <a href="/books/no-one-killed-vaidehi/index.html">
-          No One Killed Vaidehi
-        </a>
+            <p class="stories-description">
+                Stories shared quietly, without pressure.
+            </p>
 
-        <a href="/books/what-we-carry-after/index.html">
-          What We Carry After
-        </a>
+            <p class="stories-update">
+                New chapters are published weekly.
+            </p>
+        </header>
 
-        <a href="/" style="margin-top: 30px;">
-          ← Back to Home
-        </a>
+        <section class="stories-list" aria-label="Available stories">
 
-      </div>
+            <a class="story-entry"
+               href="/books/a-love-beyond-power/index.html">
+                <span class="story-number">01</span>
+                <span class="story-details">
+                    <span class="story-name">A Love Beyond Power</span>
+                    <span class="story-meta">Completed</span>
+                </span>
+                <span class="story-arrow" aria-hidden="true">↗</span>
+            </a>
 
-    </div>
-  </div>
+            <a class="story-entry"
+               href="/books/no-one-killed-vaidehi/index.html">
+                <span class="story-number">02</span>
+                <span class="story-details">
+                    <span class="story-name">No One Killed Vaidehi</span>
+                </span>
+                <span class="story-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="story-entry"
+               href="/books/what-we-carry-after/index.html">
+                <span class="story-number">03</span>
+                <span class="story-details">
+                    <span class="story-name">What We Carry After</span>
+                </span>
+                <span class="story-arrow" aria-hidden="true">↗</span>
+            </a>
+
+        </section>
+
+        <footer class="stories-footer">
+            <a href="/" class="stories-back">← Back to Home</a>
+            <span>OpenShelf · Read at your own pace</span>
+        </footer>
+
+    </main>
 
 </body>
 </html>
-

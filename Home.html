@@ -1,35 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Open Shelf</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#142321" />
+
+    <title>OpenShelf — Stories shared quietly</title>
+
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="container">
-    <div class="card">
+    <main class="container">
+        
+<div class="tile-grid">
 
-      <!-- LEFT SECTION -->
-      <div class="left">
-        <h1>Open<br>Shelf</h1>
-        <p class="tagline">
-          Stories shared quietly, without pressure.
-        </p>
-    
-      </div>
-      <!-- RIGHT SECTION -->
-      <div class="right">
-        <a href="bio.html">About Author</a>
-        <a href="/index/">Stories</a>
-        <a href="https://www.amazon.in/stores/author/B0GD8XWQQQ">Paperback</a>
-        <a href="reachout.html">Reach Out</a>
-      </div>
+    <!-- BRAND -->
+    <section class="tile brand-tile">
+        <div class="brand-content">
+            <h1>OpenShelf</h1>
+            <p class="tagline">Stories shared quietly, without pressure.</p>
+        </div>
+    </section>
 
-    </div>
-  </div>
+    <!-- STORIES -->
+    <a href="/index/" class="tile stories-tile">
+        <div class="tile-content">
+            <span class="tile-icon" aria-hidden="true">▤</span>
+            <h2>Stories</h2>
+            <p>Find your next read</p>
+        </div>
+    </a>
+
+    <!-- RECENT RELEASE -->
+    <a href="/books/what-we-carry-after/index.html" class="tile recent-tile">
+        <div class="tile-content">
+            <span class="tile-icon" aria-hidden="true">✧</span>
+            <h2>Recent Release</h2>
+            <p>Explore the latest story</p>
+        </div>
+    </a>
+
+    <!-- FAN FAVOURITE -->
+    <a href="/books/no-one-killed-vaidehi/index.html" class="tile favourite-tile">
+        <div class="tile-content">
+            <span class="tile-icon" aria-hidden="true">♡</span>
+            <h2>Fan Favourite Story</h2>
+            <p>Discover a reader favourite</p>
+        </div>
+    </a>
+
+    <!-- ABOUT AUTHOR -->
+    <a href="bio.html" class="tile about-tile">
+        <div class="tile-content">
+            <span class="tile-icon" aria-hidden="true">↗</span>
+            <h2>About Author</h2>
+        </div>
+    </a>
+
+    <!-- PAPERBACK -->
+    <a
+        href="https://www.amazon.in/stores/author/B0GD8XWQQQ"
+        class="tile paperback-tile"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <div class="tile-content">
+            <span class="tile-icon" aria-hidden="true">▣</span>
+            <h2>Paperback</h2>
+            <p>Find books on Amazon</p>
+        </div>
+    </a>
+
+    <!-- REACH OUT -->
+    <a href="reachout.html" class="tile reachout-tile">
+        <div class="tile-content">
+            <span class="tile-icon" aria-hidden="true">✉</span>
+            <h2>Reach Out</h2>
+        </div>
+    </a>
+
+</div>
+
+    </main>
 
 </body>
 </html>
-

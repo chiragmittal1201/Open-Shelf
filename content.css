@@ -1,0 +1,255 @@
+
+/* =========================
+   OPENSHELF CONTENT PAGES
+   Bio, stories and chapters
+========================= */
+
+:root {
+    --content-background: #142321;
+    --content-accent: #20c993;
+    --content-text: #f2f7f3;
+    --content-muted: #b4c9c0;
+    --content-line: rgba(180, 201, 192, 0.22);
+}
+
+/* =========================
+   BASE
+========================= */
+
+.content-page {
+    min-height: 100vh;
+    background: var(--content-background);
+    color: var(--content-text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.content-container {
+    width: min(100% - 48px, 1000px);
+    margin-inline: auto;
+}
+
+/* =========================
+   CONTENT NAVIGATION
+========================= */
+
+.content-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--content-line);
+}
+
+.content-nav a {
+    color: var(--content-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.content-nav .site-name {
+    color: var(--content-text);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+}
+
+.content-nav a:hover {
+    color: var(--content-accent);
+}
+
+.content-nav a:focus-visible {
+    outline: 2px solid var(--content-accent);
+    outline-offset: 5px;
+}
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.content-header {
+    padding: 64px 0 40px;
+    border-bottom: 1px solid var(--content-line);
+}
+
+.content-eyebrow {
+    margin-bottom: 20px;
+    color: var(--content-accent);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.content-title {
+    color: var(--content-text);
+    font-size: clamp(36px, 7vw, 68px);
+    font-weight: 650;
+    letter-spacing: -2.5px;
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+}
+
+.content-subtitle {
+    margin-top: 18px;
+    color: var(--content-muted);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* =========================
+   GENERAL CONTENT
+========================= */
+
+.content-body {
+    max-width: 720px;
+    padding: 40px 0 64px;
+}
+
+.content-body p {
+    margin-bottom: 24px;
+    color: var(--content-muted);
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.content-body p:last-child {
+    margin-bottom: 0;
+}
+
+.content-body .content-intro {
+    color: var(--content-text);
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* =========================
+   STORY / CHAPTER READING
+========================= */
+
+.chapter-content {
+    max-width: 720px;
+    padding: 40px 0 64px;
+}
+
+.chapter-content p {
+    max-width: 700px;
+    margin-bottom: 1.4em;
+    color: var(--content-text);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.chapter-content p:last-child {
+    margin-bottom: 0;
+}
+
+.chapter-content h1,
+.chapter-content h2,
+.chapter-content h3 {
+    margin-bottom: 24px;
+    color: var(--content-text);
+    line-height: 1.3;
+}
+
+.chapter-content h2 {
+    font-size: 28px;
+}
+
+.chapter-content h3 {
+    font-size: 22px;
+}
+
+.chapter-content a {
+    color: var(--content-accent);
+}
+
+.speaker {
+    margin-bottom: 4px !important;
+    font-weight: 600;
+    font-weight: bold;
+}
+
+.speaker + p {
+    margin-top: 0;
+}
+/* =========================
+   CONTENT FOOTER
+========================= */
+
+.content-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 0 30px;
+    border-top: 1px solid var(--content-line);
+    color: var(--content-muted);
+    font-size: 12px;
+}
+
+/* =========================
+   TABLET AND MOBILE
+========================= */
+
+@media (max-width: 600px) {
+    .content-container {
+        width: calc(100% - 36px);
+    }
+
+    .content-nav {
+        padding: 22px 0;
+    }
+
+    .content-nav .site-name {
+        font-size: 18px;
+    }
+
+    .content-header {
+        padding: 48px 0 30px;
+    }
+
+    .content-eyebrow {
+        font-size: 11px;
+        letter-spacing: 2.5px;
+    }
+
+    .content-title {
+        font-size: clamp(36px, 10vw, 52px);
+        letter-spacing: -1.8px;
+    }
+
+    .content-subtitle {
+        font-size: 15px;
+    }
+
+    .content-body,
+    .chapter-content {
+        padding: 30px 0 44px;
+    }
+
+    .content-body p {
+        font-size: 16px;
+        line-height: 1.85;
+    }
+
+    .content-body .content-intro {
+        font-size: 18px;
+        line-height: 1.75;
+    }
+
+    .chapter-content p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+}
+
+/* =========================
+   ACCESSIBILITY
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .content-nav a {
+        transition: none;
+    }
+}
