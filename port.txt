@@ -1,6 +1,0 @@
- {
-      title: "WHEN STORIES BECAME HISTORY",
-      type: "Nonfiction – Mythology & History",
-      image: whenStoriesBecameHistory,
-      link: "https://open-shelf.netlify.app/books/when-stories-became-history/",
-    },
